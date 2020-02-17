@@ -1,0 +1,5 @@
+<div class="empire-form">
+  <h1>Select the empire plan</h1>
+  <app-file-input (openFile)="updateEmpirePlan($event)"></app-file-input>
+  <button mat-raised-button [disabled]="!empirePlan" (click)="submit()" class="empire-form__submit-btn">Display falcon odds</button>
+</div>

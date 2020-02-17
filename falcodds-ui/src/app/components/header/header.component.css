@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title {
+  font-weight: bold;
+  color: var(--primary);
+}

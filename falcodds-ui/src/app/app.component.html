@@ -1,0 +1,11 @@
+<div class="app">
+  <div class="app__content">
+    <app-header></app-header>
+    <app-empire-form (submitPlan)="computeOdds($event)"></app-empire-form>
+    <div class="app__content__result">
+      <span *ngIf="hasError()" class="app__content__result__error">An error occurred</span>
+      <mat-progress-spinner [value]="odds" [mode]="isLoading() ? 'indeterminate' : 'determinate'"></mat-progress-spinner>
+      <h1 *ngIf="odds !== undefined">{{odds}}%</h1>
+    </div>
+  </div>
+</div>

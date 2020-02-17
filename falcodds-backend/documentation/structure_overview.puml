@@ -1,0 +1,15 @@
+@startuml
+
+interface HTTP
+
+node server {
+    node Business
+    node Domain
+    database DB
+}
+
+HTTP .> Business: POST / GET
+Business -> Domain
+Domain -> DB
+
+@enduml

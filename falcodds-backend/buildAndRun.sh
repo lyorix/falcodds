@@ -1,1 +1,0 @@
-./mvnw clean package && java -jar target/falcodds-backend-1.0-SNAPSHOT-runner.jar

@@ -1,0 +1,7 @@
+<div>
+  <mat-form-field >
+    <input matInput formControlName="filename" placeholder="File" readonly value="{{filename}}">
+  </mat-form-field>
+  <button mat-button (click)="fileInput.click()"><span class="fa fa-folder"></span></button>
+  <input type="file" accept="application/json" (change)="open($event)" #fileInput class="file-input__input-file" />
+</div>
